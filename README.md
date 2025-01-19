@@ -1,5 +1,5 @@
 <h2>Descrição</h2>
-<p>Este projeto faz parte do programa <strong>Academia Accenture 2025</strong> e tem como objetivo testes de funcionalidades relacionadas à contratação de seguros de automóveis.</p>
+<p>Este projeto faz parte do programa <strong>Academia QA Accenture 2025</strong> e tem como objetivo testes de funcionalidades relacionadas à contratação de seguros de automóveis.</p>
 
 <hr>
 
