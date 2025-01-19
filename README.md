@@ -1,9 +1,9 @@
 <h2>Descrição</h2>
-<p>Este projeto faz parte do programa <strong>Academia QA Accenture 2025</strong> e tem como objetivo testes de funcionalidades relacionadas à contratação de seguros de automóveis.</p>
+<p>Este projeto faz parte do programa <strong>Academia QA Accenture 2025</strong> e tem como objetivo testes de funcionalidade e cenários relacionadas à contratação de seguros de automóveis.</p>
 
 <hr>
 
-<h2>Funcionalidades</h2>
+<h2>Cenarios</h2>
 <ul>
     <li><strong>Cadastro de Veículos:</strong> Permite preencher os dados do veículo para contratação de seguro.</li>
     <li><strong>Validação de Seguros:</strong> Garante que os dados inseridos sejam válidos antes de prosseguir.</li>
