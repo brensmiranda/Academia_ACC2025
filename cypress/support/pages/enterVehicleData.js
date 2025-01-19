@@ -28,8 +28,16 @@ cy.get(INPUT_TOTALWEIGHTKG).type('300')
 cy.get(INPUT_PRICE).type('3000')
 cy.get(INPUT_LICENSEPLATENUMBER).type('ABC123')
 cy.get(INPUT_ANNUALMILEAGE).type('5000')
-cy.get
+
 })
+
+Cypress.Commands.add('inserirDadosNegativo', () => {
+   cy.get(INPUT_CCM).type('20000000');
+    })
+
+    Cypress.Commands.add('mensagemDeErro', () => {
+    cy.contains('.error', 'Must be a number between 1 and 2000').should('be.visible')})
+
 
 Cypress.Commands.add('proximaPagina', () => {
     cy.get(BTN_NEXT).click()})

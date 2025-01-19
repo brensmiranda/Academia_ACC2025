@@ -3,6 +3,8 @@ const INPUT_USERNAME = '#username'
 const INPUT_PASSWORD = '#password'
 const INPUT_CONFIRM_PASSWORD = '#confirmpassword'
 const BTN_SEND = '#sendemail'
+const ALERT_MESSAGE = '.sweet-alert';
+
 
 Cypress.Commands.add('inserirDadosSendQuote', () => {
     cy.get(INPUT_EMAIL).type(Cypress.env('email'))    
@@ -15,5 +17,8 @@ Cypress.Commands.add('clicarbotaoSend', () => {
     cy.get(BTN_SEND).click()
 })
 
-// Cypress.Commands.add('validarEnvioSucesso', () => {
-//     cy.get('.sweet-alert').should('be.visible');})
+Cypress.Commands.add('validarMensagemDeSucesso', () => {
+    cy.get(ALERT_MESSAGE, { timeout: 10000 }) // forcando o alert messsage a ter um novo tempo
+        .should('be.visible') // Verifica se está visível
+        .and('contain', 'Sending e-mail success!'); // Valida o texto
+});

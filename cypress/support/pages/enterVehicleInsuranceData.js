@@ -19,7 +19,7 @@ Cypress.Commands.add('inserirDadosEnterInsurantData', () => {
 
 })
 
-Cypress.Commands.add('clicarbotao', () => {
+Cypress.Commands.add('botao_next', () => {
     cy.get(BTN_NEXT).click()
 })
 

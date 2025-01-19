@@ -2,7 +2,7 @@
 # language: pt
 
 Funcionalidade: Contratar seguro de veiculo
-    Cenário: Preencher Enter Vehicle
+    Cenário: Validacao Seguro Automovel Valido
         Dado que acesso a Vehicle Insurance Application
         Quando preencho os campos obrigatorios do Enter Vehicle Data
         E clico no botão next
@@ -14,6 +14,11 @@ Funcionalidade: Contratar seguro de veiculo
         E seleciono o botao next 
         E preencho os campos da Send Quote
         E clico no botao Send
-        # Entao aparecara a confimacao Sending e-mail success!
+        Entao sera confirmado com sucesso 
 
-   
+    
+    Cenário: Criando os formularios de  Seguro de Veiculo Invalida
+         Dado que estou na tela Vehicle Insurance Application
+         Quando preencho um campo obrigatório com uma informação incorreta
+         Então uma mensagem de campo obrigatório deve ser exibida
+       

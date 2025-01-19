@@ -15,13 +15,12 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import './pages/enterEnterInsurantData'
-import './pages/enterVehicleInsurance'
+import './pages/enterVehicleData'
+import './pages/enterVehicleInsuranceData'
 import './pages/enterProductData'
 import './pages/enterSelectPriceOption'
 import './pages/enterSendQuote'
-Cypress.on('uncaught:exception', (err, runnable) => {
-    // Retorne false para evitar que o Cypress falhe o teste
+Cypress.on('uncaught:exception', (err, runnable) => { ///utilizei para ignorar exceções nao capturadas
     if (err.message.includes('e is not defined')) {
         return false
     }
